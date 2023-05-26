@@ -28,7 +28,14 @@ end
 end
 
 describe "#move"do
-it "ask the user to input the pile and the destination"
+# it "should call gets.chomp to get input from the user" do
+#     input = double("1 2\n", :chomp=>"1 2")
+#     allow(tower).to receive(:gets).and_return(input)
+
+#     expect(input).to receive(:chomp)
+#     expect(tower).to receive(:gets)
+#     tower.move
+#   end
 
 end
 

@@ -22,7 +22,7 @@ def move
 
     until won?
         puts "Enter pile and destination:"
-        print piles "\n"
+        print piles 
 
         input = gets.chomp.split.map{ |ele| ((ele.to_i) - 1)}
 
