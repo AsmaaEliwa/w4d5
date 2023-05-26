@@ -18,7 +18,19 @@ describe TowerOfHanoi do
         end
 
     end
+describe "#won?"do 
+it "returns true if one of the piles is full"do
+tower.pile2= [5,4,3,2,1]
+tower.pile3 =[5,4,3,2,1]
+expect(tower.won?).to eq(true)
+expect(tower.won?).to eq(true)
+end
+end
 
+describe "#move"do
+it "ask the user to input the pile and the destination"
+
+end
 
 
 
