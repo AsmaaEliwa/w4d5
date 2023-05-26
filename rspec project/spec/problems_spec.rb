@@ -32,8 +32,24 @@ describe "#my_transpose" do
     end
 
     it "should use the built-in Array#transpose" do
-    expect(my_transpose([[0, 1, 2],[3, 4, 5],[6, 7, 8]])).to receive(:transpose)
+    arr=[[0, 1, 2],[3, 4, 5],[6, 7, 8]]
+    expect(arr).to receive(:transpose)
+    my_transpose(arr)
+
   end
+
+end
+
+describe "#stock_picker" do 
+it "it takes an array of prices" do
+    expect{stock_picker([1,0.5,10,8,11])}.not_to raise_error
+end
+it "return the best time to buy the stock" do
+expect(stock_picker([1,0.5,10,8,11]).first).to eq(1)
+end
+it "return the best time to sell the stock"do
+expect(stock_picker([1,0.5,10,8,11]).last).to eq(4)
+end
 
 end
 

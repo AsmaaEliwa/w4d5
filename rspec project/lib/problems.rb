@@ -31,3 +31,7 @@ end
 def my_transpose(arr)
    return arr.transpose
 end
+
+def stock_picker(arr)
+   [arr.index(arr.min),arr.index(arr.max)]
+end
