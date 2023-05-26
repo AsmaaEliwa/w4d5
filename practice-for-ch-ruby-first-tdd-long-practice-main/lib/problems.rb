@@ -13,3 +13,14 @@ def my_uniq(arr)
 
     return new_arr
 end
+def two_sum(arr)
+    new_arr=[]
+    (0...arr.length).each do |i|
+        (i...arr.length).each do |j|
+            if arr[i]+arr[j]==0 &&j!=i
+                new_arr<<[i,j]
+            end
+        end
+    end
+    new_arr
+end
